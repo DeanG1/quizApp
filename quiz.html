@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-color: #272727;
+        color: rgb(229, 229, 229);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+      .question p {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .question {
+        line-height: 30px !important;
+      }
+      .question label {
+        font-size: 1.2rem;
+      }
+      .correct {
+        color: green;
+      }
+      .incorrect {
+        color: red;
+      }
+
+      .btn {
+        appearance: button;
+        background-color: #1899d6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: din-round, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 13px 16px;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transform: translateZ(0);
+        transition: filter 0.2s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 100%;
+      }
+
+      .btn:after {
+        background-clip: padding-box;
+        background-color: #1cb0f6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      .btn:main,
+      .btn:focus {
+        user-select: auto;
+      }
+
+      .btn:hover:not(:disabled) {
+        filter: brightness(1.1);
+        -webkit-filter: brightness(1.1);
+      }
+
+      .btn:disabled {
+        cursor: auto;
+      }
+
+      .btn:active {
+        border-width: 4px 0 0;
+        background: none;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        margin: 20px 20px 5px 20px;
+      }
+
+      .btn-submit {
+        background-color: #039c55;
+      }
+      .btn-submit:after {
+        background-color: #00ac5c;
+      }
+
+      .btn-reset {
+        background-color: #9c1f03;
+      }
+      .btn-reset:after {
+        background-color: #ac0000;
+      }
+
+      .test {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 20px;
+      }
+      .test-btn {
+        text-decoration: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        border: 2px solid darkred;
+        background-color: rgb(209, 17, 17);
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  </head>
+  <body>
+    <h1 class="heading">Fullstack Dev Test</h1>
+    <div class="test">
+      <a class="test-btn" href="./index.html">Go back</a>
+    </div>
+    <div id="quiz"></div>
+    <div class="buttons">
+      <button class="btn btn-submit" onclick="submitQuiz()">Submit</button>
+      <button class="btn btn-reset" onclick="resetQuiz()">Reset</button>
+      <button class="btn btn-generate" onclick="generateQuiz()">
+        Generate New
+      </button>
+    </div>
+    <script>
+      let questions = [];
+      let randomQuestions = [];
+      let score = 0;
+      const jsConfetti = new JSConfetti();
+
+      fetch("quizQuestions.json")
+        .then((response) => response.json())
+        .then((data) => {
+          questions = data.questions;
+          generateQuiz();
+        })
+        .catch((error) => console.error("Error fetching questions:", error));
+
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      function getRandomQuestions(questions, num) {
+        return shuffle([...questions]).slice(0, num);
+      }
+
+      function loadQuiz() {
+        const quizDiv = document.getElementById("quiz");
+        quizDiv.innerHTML = "";
+        const ol = document.createElement("ol");
+
+        randomQuestions.forEach((quiz, index) => {
+          const li = document.createElement("li");
+          const questionDiv = document.createElement("div");
+          questionDiv.classList.add("question");
+          questionDiv.innerHTML = `<p>${quiz.question}</p>`;
+          quiz.possible_answers.forEach((answer) => {
+            questionDiv.innerHTML += `
+            <label>
+              <input type="radio" name="question${index}" value="${answer}">
+              ${answer}
+            </label><br>`;
+          });
+          li.appendChild(questionDiv);
+          ol.appendChild(li);
+        });
+
+        quizDiv.appendChild(ol);
+      }
+
+      function generateQuiz() {
+        if (questions.length > 0) {
+          randomQuestions = getRandomQuestions(questions, 20);
+          loadQuiz();
+        } else {
+          console.error("No questions available to generate quiz.");
+        }
+      }
+
+      function submitQuiz() {
+        score = 0;
+        let allCorrect = true;
+        randomQuestions.forEach((quiz, index) => {
+          const selectedAnswer = document.querySelector(
+            `input[name="question${index}"]:checked`
+          );
+          const questionDiv =
+            document.getElementsByClassName("question")[index];
+          if (!questionDiv.querySelector(".result")) {
+            const resultDiv = document.createElement("div");
+            resultDiv.classList.add("result");
+            if (selectedAnswer) {
+              if (selectedAnswer.value === quiz.correct_answer) {
+                resultDiv.innerHTML = `<p class="correct">Correct!</p>`;
+                score++;
+              } else {
+                resultDiv.innerHTML = `<p class="incorrect">Incorrect! The correct answer is: ${quiz.correct_answer}</p>`;
+                allCorrect = false;
+              }
+            } else {
+              resultDiv.innerHTML = `<p class="incorrect">No answer selected! The correct answer is: ${quiz.correct_answer}</p>`;
+              allCorrect = false;
+            }
+
+            questionDiv.appendChild(resultDiv);
+          }
+        });
+
+        if (allCorrect) {
+          jsConfetti.addConfetti({
+            confettiColors: [
+              "#ff0a54",
+              "#ff477e",
+              "#ff7096",
+              "#ff85a1",
+              "#fbb1bd",
+              "#f9bec7",
+            ],
+            confettiRadius: 6,
+            confettiNumber: 500,
+            confettiNumber: 300,
+          });
+        }
+      }
+
+      function resetQuiz() {
+        loadQuiz();
+      }
+
+      window.onload = generateQuiz;
+    </script>
+  </body>
+</html>

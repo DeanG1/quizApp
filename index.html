@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KMK Questions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #272727;
+        color: rgb(229, 229, 229);
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .question {
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+      .question h2 {
+        margin-bottom: 10px;
+      }
+      .answers {
+        list-style-type: none;
+        padding: 0;
+      }
+      .answer {
+        margin-bottom: 5px;
+      }
+      .correct {
+        color: rgb(34, 162, 34);
+        font-weight: bold;
+      }
+      ol {
+        counter-reset: list;
+      }
+      ol > li {
+        list-style: none;
+        margin-bottom: 5px;
+      }
+      ol > li:before {
+        content: counter(list, lower-alpha) ") ";
+        counter-increment: list;
+      }
+
+      .test {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 20px;
+      }
+      .test-btn {
+        text-decoration: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        border: 2px solid darkred;
+        background-color: rgb(209, 17, 17);
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  </head>
+  <body>
+    <div class="test">
+      <a class="test-btn" href="./quiz.html">Test</a>
+    </div>
+    <div class="container">
+      <h1>Quiz Questions</h1>
+      <div id="questions"></div>
+    </div>
+
+    <script>
+      fetch("quizQuestions.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const questionsDiv = document.getElementById("questions");
+          data.questions.forEach((question, index) => {
+            const questionDiv = document.createElement("div");
+            questionDiv.classList.add("question");
+            const questionHeader = document.createElement("h2");
+            questionHeader.textContent = `${index + 1}. ${question.question}`;
+            questionDiv.appendChild(questionHeader);
+            const answersList = document.createElement("ol");
+            answersList.classList.add("answers");
+            answersList.classList.add("a");
+            question.possible_answers.forEach((answer) => {
+              const answerItem = document.createElement("li");
+              answerItem.textContent = answer;
+              if (answer === question.correct_answer) {
+                answerItem.classList.add("correct");
+              }
+              answersList.appendChild(answerItem);
+            });
+            questionDiv.appendChild(answersList);
+            questionsDiv.appendChild(questionDiv);
+          });
+        })
+        .catch((error) => console.error("Error fetching questions:", error));
+    </script>
+  </body>
+</html>

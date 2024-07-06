@@ -1,0 +1,1126 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of the this keyword in JavaScript?",
+      "possible_answers": [
+        "Refers to the current function",
+        "Refers to the current object instance",
+        "Refers to the global scope"
+      ],
+      "correct_answer": "Refers to the current object instance"
+    },
+    {
+      "question": "Which method can be used to convert a JSON text into a JavaScript object?",
+      "possible_answers": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.objectify()"
+      ],
+      "correct_answer": "JSON.parse()"
+    },
+    {
+      "question": "What is Node.js primarily used for?",
+      "possible_answers": [
+        "Front-end development",
+        "Server-side scripting",
+        "Desktop applications"
+      ],
+      "correct_answer": "Server-side scripting"
+    },
+    {
+      "question": "Which module is used for working with file and directory paths?",
+      "possible_answers": ["os", "http", "path"],
+      "correct_answer": "path"
+    },
+    {
+      "question": "What is Express used for in Node.js applications?",
+      "possible_answers": [
+        "Creating front-end UIs",
+        "Accessing the file system",
+        "Building web servers and APIs"
+      ],
+      "correct_answer": "Building web servers and APIs"
+    },
+    {
+      "question": "What is the primary purpose of the public static void main(String[] args) method in a Java application?",
+      "possible_answers": [
+        "It serves as the entry point for the application.",
+        "It is used to declare global variables.",
+        "It initializes the garbage collector."
+      ],
+      "correct_answer": "It serves as the entry point for the application."
+    },
+    {
+      "question": "Which of the following is not a Java keyword?",
+      "possible_answers": ["static", "package", "include"],
+      "correct_answer": "include"
+    },
+    {
+      "question": "What is TypeScript primarily used for?",
+      "possible_answers": [
+        "Styling web pages",
+        "Adding type safety to JavaScript",
+        "Managing databases"
+      ],
+      "correct_answer": "Adding type safety to JavaScript"
+    },
+    {
+      "question": "Which TypeScript feature allows you to specify the shape of an object?",
+      "possible_answers": ["Interface", "Class", "Module"],
+      "correct_answer": "Interface"
+    },
+    {
+      "question": "In a typical Express backend structure, where would you define your route handlers?",
+      "possible_answers": [
+        "In the routes directory",
+        "In the views directory",
+        "In the public directory"
+      ],
+      "correct_answer": "In the routes directory"
+    },
+    {
+      "question": "What is the purpose of the controllers directory in an Express application?",
+      "possible_answers": [
+        "To handle the business logic for different routes",
+        "To store static files",
+        "To define database schemas"
+      ],
+      "correct_answer": "To handle the business logic for different routes"
+    },
+    {
+      "question": "In Clean Architecture, what layer should contain the business logic?",
+      "possible_answers": ["Infrastructure", "Use Cases", "UI"],
+      "correct_answer": "Use Cases"
+    },
+    {
+      "question": "Which layer in Clean Architecture is closest to the database?",
+      "possible_answers": ["Data", "Use Cases", "Domain"],
+      "correct_answer": "Data"
+    },
+    {
+      "question": "What is the primary purpose of a repository in software architecture?",
+      "possible_answers": [
+        "To manage user sessions",
+        "To encapsulate data access logic",
+        "To handle HTTP requests"
+      ],
+      "correct_answer": "To encapsulate data access logic"
+    },
+    {
+      "question": "In a repository pattern, which operation is typically performed by a save() method?",
+      "possible_answers": [
+        "Deleting data",
+        "Storing or updating data",
+        "Retrieving data"
+      ],
+      "correct_answer": "Storing or updating data"
+    },
+    {
+      "question": "What is an entity in the context of software architecture?",
+      "possible_answers": [
+        "An object that represents a real-world concept or thing",
+        "A function that performs data transformations",
+        "A service that handles user input"
+      ],
+      "correct_answer": "An object that represents a real-world concept or thing"
+    },
+    {
+      "question": "Which of the following is true about entities in Clean Architecture?",
+      "possible_answers": [
+        "They should contain business logic and data access code",
+        "They should be independent of external frameworks and libraries",
+        "They should handle HTTP requests and responses"
+      ],
+      "correct_answer": "They should be independent of external frameworks and libraries"
+    },
+    {
+      "question": "What is a use case in Clean Architecture?",
+      "possible_answers": [
+        "A specific user interface component",
+        "A specific operation or service the application offers",
+        "A specific database schema"
+      ],
+      "correct_answer": "A specific operation or service the application offers"
+    },
+    {
+      "question": "Which of the following is typically true about use cases in software architecture?",
+      "possible_answers": [
+        "They should orchestrate the flow of data between entities and repositories",
+        "They should handle the rendering of views",
+        "They should manage the database connections"
+      ],
+      "correct_answer": "They should orchestrate the flow of data between entities and repositories"
+    },
+    {
+      "question": "What is the primary purpose of middleware in Express?",
+      "possible_answers": [
+        "To define routes",
+        "To handle requests and responses at a centralized point",
+        "To manage database connections"
+      ],
+      "correct_answer": "To handle requests and responses at a centralized point"
+    },
+    {
+      "question": "Which of the following is an example of a commonly used middleware in Express applications?",
+      "possible_answers": ["body-parser", "react-router", "webpack"],
+      "correct_answer": "body-parser"
+    },
+    {
+      "question": "In backend development, what are permissions used for?",
+      "possible_answers": [
+        "To optimize database queries",
+        "To control access to resources and actions based on user roles",
+        "To define data models"
+      ],
+      "correct_answer": "To control access to resources and actions based on user roles"
+    },
+    {
+      "question": "Which HTTP status code is typically returned when a user does not have the required permissions to access a resource?",
+      "possible_answers": ["200 OK", "404 Not Found", "403 Forbidden"],
+      "correct_answer": "403 Forbidden"
+    },
+    {
+      "question": "What is the purpose of migrations in database management?",
+      "possible_answers": [
+        "To version control changes to the database schema",
+        "To backup database data",
+        "To monitor database performance"
+      ],
+      "correct_answer": "To version control changes to the database schema"
+    },
+    {
+      "question": "Which tool is commonly used for managing database migrations in a Node.js application?",
+      "possible_answers": ["Sequelize", "Knex.js", "Mocha"],
+      "correct_answer": "Knex.js"
+    },
+    {
+      "question": "What is the purpose of defining routes in an Express application?",
+      "possible_answers": [
+        "To compile JavaScript code",
+        "To map URLs to specific handler functions",
+        "To manage database connections"
+      ],
+      "correct_answer": "To map URLs to specific handler functions"
+    },
+    {
+      "question": "What is the purpose of an API (Application Programming Interface)?",
+      "possible_answers": [
+        "To manage front-end user interfaces",
+        "To allow different software systems to communicate with each other",
+        "To store and retrieve files"
+      ],
+      "correct_answer": "To allow different software systems to communicate with each other"
+    },
+    {
+      "question": "Which of the following HTTP methods is used to update a resource?",
+      "possible_answers": ["GET", "PUT", "DELETE"],
+      "correct_answer": "PUT"
+    },
+    {
+      "question": "Which of the following is true about variable declaration using let and var?",
+      "possible_answers": [
+        "let is block-scoped, while var is function-scoped.",
+        "let is function-scoped, while var is block-scoped.",
+        "Both let and var are block-scoped."
+      ],
+      "correct_answer": "let is block-scoped, while var is function-scoped."
+    },
+    {
+      "question": "Which of the following methods is used to create a new array by performing a function on each array element in JavaScript?",
+      "possible_answers": [
+        "Array.prototype.map()",
+        "Array.prototype.filter()",
+        "Array.prototype.reduce()"
+      ],
+      "correct_answer": "Array.prototype.map()"
+    },
+    {
+      "question": "What does the === operator do in JavaScript?",
+      "possible_answers": [
+        "Compares values regardless of type",
+        "Compares both value and type",
+        "Assigns values"
+      ],
+      "correct_answer": "Compares both value and type"
+    },
+    {
+      "question": "What is the result of typeof null in JavaScript?",
+      "possible_answers": ["\"null\"", "\"object\"", "\"undefined\""],
+      "correct_answer": "\"object\""
+    },
+    {
+      "question": "Which Node.js module is used for handling HTTP requests and responses?",
+      "possible_answers": ["url", "http", "fs"],
+      "correct_answer": "http"
+    },
+    {
+      "question": "How do you read the contents of a file in Node.js?",
+      "possible_answers": [
+        "fs.readFileSync('file.txt')",
+        "fs.readFile('file.txt', callback)",
+        "fs.read('file.txt')"
+      ],
+      "correct_answer": "fs.readFile('file.txt', callback)"
+    },
+    {
+      "question": "Which command is used to initialize a new Node.js project?",
+      "possible_answers": ["npm init", "node init", "npm start"],
+      "correct_answer": "npm init"
+    },
+    {
+      "question": "How do you install an npm package globally?",
+      "possible_answers": [
+        "npm install package",
+        "npm install -g package",
+        "npm install --save package"
+      ],
+      "correct_answer": "npm install -g package"
+    },
+    {
+      "question": "How do you set up middleware in an Express application?",
+      "possible_answers": [
+        "app.use('middleware')",
+        "app.use(middlewareFunction)",
+        "app.middleware(middlewareFunction)"
+      ],
+      "correct_answer": "app.use(middlewareFunction)"
+    },
+    {
+      "question": "What is the correct way to handle errors in Express?",
+      "possible_answers": [
+        "Use a try-catch block around every route handler",
+        "Use an error-handling middleware function",
+        "Use a custom error event emitter"
+      ],
+      "correct_answer": "Use an error-handling middleware function"
+    },
+    {
+      "question": "Which method would you use to handle POST requests in Express?",
+      "possible_answers": ["app.get()", "app.post()", "app.put()"],
+      "correct_answer": "app.post()"
+    },
+    {
+      "question": "How do you serve static files in an Express application?",
+      "possible_answers": [
+        "app.use(express.static('public'))",
+        "app.use(express.files('public'))",
+        "app.static('public')"
+      ],
+      "correct_answer": "app.use(express.static('public'))"
+    },
+    {
+      "question": "What is the default value of an uninitialized boolean variable in Java?",
+      "possible_answers": ["false", "true", "null"],
+      "correct_answer": "false"
+    },
+    {
+      "question": "Which keyword is used to inherit a class in Java?",
+      "possible_answers": ["implements", "extends", "inherits"],
+      "correct_answer": "extends"
+    },
+    {
+      "question": "Which method is used to start a thread in Java?",
+      "possible_answers": ["run()", "start()", "init()"],
+      "correct_answer": "start()"
+    },
+    {
+      "question": "Which of the following is a checked exception in Java?",
+      "possible_answers": [
+        "IOException",
+        "ArithmeticException",
+        "NullPointerException"
+      ],
+      "correct_answer": "IOException"
+    },
+    {
+      "question": "How do you define an optional property in a TypeScript interface?",
+      "possible_answers": [
+        "property: any",
+        "property?: any",
+        "property: any = undefined"
+      ],
+      "correct_answer": "property?: any"
+    },
+    {
+      "question": "Which of the following is a valid TypeScript tuple type?",
+      "possible_answers": [
+        "[string, string]",
+        "[number, string]",
+        "{number, string}"
+      ],
+      "correct_answer": "[string, string]"
+    },
+    {
+      "question": "How do you explicitly specify the return type of a function in TypeScript?",
+      "possible_answers": [
+        "functionName(): returnType",
+        "functionName() => returnType",
+        "functionName{returnType}"
+      ],
+      "correct_answer": "functionName(): returnType"
+    },
+    {
+      "question": "How do you import a module in TypeScript?",
+      "possible_answers": [
+        "include module from 'module'",
+        "require('module')",
+        "import { module } from 'module'"
+      ],
+      "correct_answer": "import { module } from 'module'"
+    },
+
+    {
+      "question": "Where should you place your middleware functions in an Express application?",
+      "possible_answers": [
+        "In the routes directory",
+        "In the middlewares directory",
+        "In the views directory"
+      ],
+      "correct_answer": "In the middlewares directory"
+    },
+    {
+      "question": "What is the main purpose of the app.js or server.js file in an Express application?",
+      "possible_answers": [
+        "To store environment variables",
+        "To initialize the server and set up middleware and routes",
+        "To manage static files"
+      ],
+      "correct_answer": "To initialize the server and set up middleware and routes"
+    },
+    {
+      "question": "In Clean Architecture, what is the role of the entities layer?",
+      "possible_answers": [
+        "To manage database connections",
+        "To represent core business rules and data",
+        "To handle user input"
+      ],
+      "correct_answer": "To represent core business rules and data"
+    },
+    {
+      "question": "Which principle does Clean Architecture promote regarding dependencies?",
+      "possible_answers": [
+        "Dependencies should point towards infrastructure",
+        "Dependencies should point inwards towards business logic",
+        "Dependencies should be circular for flexibility"
+      ],
+      "correct_answer": "Dependencies should point inwards towards business logic"
+    },
+    {
+      "question": "Which design pattern does the repository pattern often complement?",
+      "possible_answers": ["Data Mapper", "Singleton", "Adapter"],
+      "correct_answer": "Data Mapper"
+    },
+    {
+      "question": "What is a key advantage of using the repository pattern?",
+      "possible_answers": [
+        "Simplifies database schema design",
+        "Decouples the data access layer from the business logic",
+        "Increases application startup time"
+      ],
+      "correct_answer": "Decouples the data access layer from the business logic"
+    },
+    {
+      "question": "Which of the following should entities in Clean Architecture not depend on?",
+      "possible_answers": [
+        "Business logic",
+        "Infrastructure frameworks",
+        "Domain rules"
+      ],
+      "correct_answer": "Infrastructure frameworks"
+    },
+    {
+      "question": "What typically distinguishes an entity from a value object?",
+      "possible_answers": [
+        "Entities have an identity that runs through time and different states.",
+        "Entities are always immutable.",
+        "Entities cannot contain behavior."
+      ],
+      "correct_answer": "Entities have an identity that runs through time and different states."
+    },
+    {
+      "question": "What is an appropriate responsibility for a use case in Clean Architecture?",
+      "possible_answers": [
+        "Manage the application's user interface",
+        "Implement specific application actions and orchestration",
+        "Maintain the database schema"
+      ],
+      "correct_answer": "Implement specific application actions and orchestration"
+    },
+    {
+      "question": "Which of the following best describes a use case interactor?",
+      "possible_answers": [
+        "It coordinates the flow of data between the UI, entities, and repositories.",
+        "It is responsible for rendering HTML views.",
+        "It manages static assets."
+      ],
+      "correct_answer": "It coordinates the flow of data between the UI, entities, and repositories."
+    },
+    {
+      "question": "What is a common use case for middleware in Express applications?",
+      "possible_answers": [
+        "Parsing JSON bodies from incoming requests",
+        "Defining application routes",
+        "Serving static files"
+      ],
+      "correct_answer": "Parsing JSON bodies from incoming requests"
+    },
+    {
+      "question": "How do you define a custom middleware function in Express?",
+      "possible_answers": [
+        "function(req, res, next) { ... }",
+        "function(req, res) { ... }",
+        "function(req, res, done) { ... }"
+      ],
+      "correct_answer": "function(req, res, next) { ... }"
+    },
+    {
+      "question": "What is RBAC in the context of permissions?",
+      "possible_answers": [
+        "Role-Based Access Control",
+        "Resource-Based Access Control",
+        "Route-Based Access Control"
+      ],
+      "correct_answer": "Role-Based Access Control"
+    },
+    {
+      "question": "How would you typically handle permission checks in an Express application?",
+      "possible_answers": [
+        "Using middleware to check user roles before route handlers",
+        "Directly inside route handlers",
+        "Inside database query functions"
+      ],
+      "correct_answer": "Using middleware to check user roles before route handlers"
+    },
+    {
+      "question": "What does it mean to roll back a migration?",
+      "possible_answers": [
+        "To revert the database schema to a previous state",
+        "To apply new changes to the database schema",
+        "To backup the current state of the database schema"
+      ],
+      "correct_answer": "To revert the database schema to a previous state"
+    },
+    {
+      "question": "In which file format are most migration scripts written?",
+      "possible_answers": ["JSON", "SQL or JavaScript", "XML"],
+      "correct_answer": "SQL or JavaScript"
+    },
+    {
+      "question": "How do you handle route parameters in Express?",
+      "possible_answers": [
+        "Using req.params",
+        "Using req.query",
+        "Using req.body"
+      ],
+      "correct_answer": "Using req.params"
+    },
+    {
+      "question": "What is the correct way to define a route that captures a user ID in the URL?",
+      "possible_answers": [
+        "app.get('/user', function(req, res) { ... })",
+        "app.get('/user/', function(req, res) { ... })",
+        "app.get('/user/:id', function(req, res) { ... })"
+      ],
+      "correct_answer": "app.get('/user/:id', function(req, res) { ... })"
+    },
+    {
+      "question": "Which of the following is a NoSQL database?",
+      "possible_answers": ["MongoDB", "PostgreSQL", "MySQL"],
+      "correct_answer": "MongoDB"
+    },
+    {
+      "question": "What is an ORM?",
+      "possible_answers": [
+        "A database management system",
+        "A tool that maps between objects in code and database tables",
+        "A method of writing raw SQL queries"
+      ],
+      "correct_answer": "A tool that maps between objects in code and database tables"
+    },
+    {
+      "question": "Which HTTP method is used to retrieve data from a server?",
+      "possible_answers": ["GET", "POST", "PUT"],
+      "correct_answer": "GET"
+    },
+    {
+      "question": "Which HTTP status code indicates that a resource was not found?",
+      "possible_answers": ["200", "404", "403"],
+      "correct_answer": "404"
+    },
+    {
+      "question": "What is the output of the following code: console.log(0.1 + 0.2 === 0.3)?",
+      "possible_answers": ["false", "true", "undefined"],
+      "correct_answer": "false"
+    },
+    {
+      "question": "What does the Object.freeze method do in JavaScript?",
+      "possible_answers": [
+        "Prevents new properties from being added to an object",
+        "Makes an object immutable",
+        "Seals an object, preventing modifications to its properties' values"
+      ],
+      "correct_answer": "Makes an object immutable"
+    },
+    {
+      "question": "Which of the following is not a valid way to create an object in JavaScript?",
+      "possible_answers": [
+        "var obj = {};",
+        "var obj = Object.create(null, {foo: 'bar'});",
+        "var obj = new Object();"
+      ],
+      "correct_answer": "var obj = Object.create(null, {foo: 'bar'});"
+    },
+    {
+      "question": "In Node.js, which of the following correctly describes the event loop?",
+      "possible_answers": [
+        "A system that handles synchronous tasks",
+        "A system that handles asynchronous callbacks",
+        "A system that blocks the main thread"
+      ],
+      "correct_answer": "A system that handles asynchronous callbacks"
+    },
+    {
+      "question": "Which of the following statements about streams in Node.js is true?",
+      "possible_answers": [
+        "Streams are instances of EventEmitter and can be readable, writable, or both.",
+        "Streams must always be synchronous.",
+        "Streams do not support backpressure."
+      ],
+      "correct_answer": "Streams are instances of EventEmitter and can be readable, writable, or both."
+    },
+    {
+      "question": "What is the purpose of the cluster module in Node.js?",
+      "possible_answers": [
+        "To create child processes for handling asynchronous tasks",
+        "To allow a Node.js application to be scaled across multiple CPU cores",
+        "To manage database connections"
+      ],
+      "correct_answer": "To allow a Node.js application to be scaled across multiple CPU cores"
+    },
+    {
+      "question": "How can you handle asynchronous errors in Express route handlers?",
+      "possible_answers": [
+        "Use a try-catch block inside an async function and call next with the error",
+        "Wrap the route handler in a synchronous function",
+        "Use process.on('unhandledRejection')"
+      ],
+      "correct_answer": "Use a try-catch block inside an async function and call next with the error"
+    },
+    {
+      "question": "What does the app.locals object in Express provide?",
+      "possible_answers": [
+        "A storage mechanism for application-wide variables accessible to all templates",
+        "A mechanism for defining local variables in middleware",
+        "A way to handle request-scoped data"
+      ],
+      "correct_answer": "A storage mechanism for application-wide variables accessible to all templates"
+    },
+    {
+      "question": "What is the difference between final, finally, and finalize in Java?",
+      "possible_answers": [
+        "final is used to define constants, finally handles exceptions, and finalize releases resources.",
+        "final prevents inheritance, finally is a block in exception handling, and finalize is a method for cleanup before garbage collection.",
+        "final is for abstract classes, finally creates new instances, and finalize handles IO operations."
+      ],
+      "correct_answer": "final prevents inheritance, finally is a block in exception handling, and finalize is a method for cleanup before garbage collection."
+    },
+    {
+      "question": "Which design pattern does the enum type in Java most closely relate to?",
+      "possible_answers": ["Singleton", "Factory", "Prototype"],
+      "correct_answer": "Singleton"
+    },
+    {
+      "question": "What is the difference between a HashMap and a ConcurrentHashMap in Java?",
+      "possible_answers": [
+        "HashMap is thread-safe, while ConcurrentHashMap is not.",
+        "ConcurrentHashMap is synchronized at the method level.",
+        "ConcurrentHashMap allows concurrent access without locking the entire map."
+      ],
+      "correct_answer": "ConcurrentHashMap allows concurrent access without locking the entire map."
+    },
+    {
+      "question": "What is the difference between interface and type in TypeScript?",
+      "possible_answers": [
+        "interface can be extended with other interfaces, while type can be intersected with other types.",
+        "type is only for primitive types, while interface is for object types.",
+        "interface cannot define union types, while type can."
+      ],
+      "correct_answer": "interface can be extended with other interfaces, while type can be intersected with other types."
+    },
+    {
+      "question": "How do you enforce immutability on an array in TypeScript?",
+      "possible_answers": [
+        "Use readonly with the array declaration",
+        "Use ReadonlyArray<T>",
+        "Use const when declaring the array"
+      ],
+      "correct_answer": "Use ReadonlyArray<T>"
+    },
+    {
+      "question": "What is the purpose of declare in TypeScript?",
+      "possible_answers": [
+        "To declare new variables",
+        "To define types for variables or functions that are defined elsewhere (e.g., in an external library)",
+        "To declare methods in a class"
+      ],
+      "correct_answer": "To define types for variables or functions that are defined elsewhere (e.g., in an external library)"
+    },
+    {
+      "question": "How do you structure a scalable Express application?",
+      "possible_answers": [
+        "Separate concerns into different modules (e.g., routes, controllers, services)",
+        "Keep all logic in a single file for simplicity",
+        "Use synchronous functions to handle requests"
+      ],
+      "correct_answer": "Separate concerns into different modules (e.g., routes, controllers, services)"
+    },
+    {
+      "question": "What is a common way to handle configuration in an Express application?",
+      "possible_answers": [
+        "Hard-code values directly in the application",
+        "Use environment variables and a configuration module like dotenv",
+        "Store configuration values in the database"
+      ],
+      "correct_answer": "Use environment variables and a configuration module like dotenv"
+    },
+    {
+      "question": "What is the Dependency Rule in Clean Architecture?",
+      "possible_answers": [
+        "Source code dependencies must only point inwards towards the use cases and entities.",
+        "Use cases can depend on infrastructure components.",
+        "Entities can depend on UI components."
+      ],
+      "correct_answer": "Source code dependencies must only point inwards towards the use cases and entities."
+    },
+    {
+      "question": "How do you enforce separation of concerns in Clean Architecture?",
+      "possible_answers": [
+        "By using a single layer for all logic",
+        "By organizing code into layers like entities, use cases, and infrastructure",
+        "By combining business logic with infrastructure code"
+      ],
+      "correct_answer": "By organizing code into layers like entities, use cases, and infrastructure"
+    },
+    {
+      "question": "What is a common pattern for implementing a repository in Node.js?",
+      "possible_answers": [
+        "Directly using SQL queries in the route handlers",
+        "Abstracting database operations into separate classes with methods like find, save, and delete",
+        "Embedding database logic directly in the models"
+      ],
+      "correct_answer": "Abstracting database operations into separate classes with methods like find, save, and delete"
+    },
+    {
+      "question": "How do you handle transactions in a repository pattern?",
+      "possible_answers": [
+        "Use a unit of work pattern to manage transactions across multiple repositories",
+        "Handle transactions directly in the controllers"
+      ],
+      "correct_answer": "Use a unit of work pattern to manage transactions across multiple repositories"
+    },
+    {
+      "question": "What is the role of entities in Domain-Driven Design (DDD)?",
+      "possible_answers": [
+        "To handle database connections",
+        "To manage UI logic",
+        "To represent core business objects with unique identities"
+      ],
+      "correct_answer": "To represent core business objects with unique identities"
+    },
+    {
+      "question": "How do entities in Clean Architecture differ from data transfer objects (DTOs)?",
+      "possible_answers": [
+        "Entities contain business logic and rules, while DTOs are simple containers for data transfer.",
+        "Entities are immutable, while DTOs are mutable.",
+        "Entities are used only for persistence, while DTOs are used for in-memory operations."
+      ],
+      "correct_answer": "Entities contain business logic and rules, while DTOs are simple containers for data transfer."
+    },
+    {
+      "question": "What is the benefit of use case classes in Clean Architecture?",
+      "possible_answers": [
+        "They make the codebase more monolithic",
+        "They encapsulate and isolate business logic for specific application actions",
+        "They handle all infrastructure concerns"
+      ],
+      "correct_answer": "They encapsulate and isolate business logic for specific application actions"
+    },
+    {
+      "question": "How do use cases interact with repositories and entities?",
+      "possible_answers": [
+        "Directly embed repository logic within use case methods",
+        "Use use case classes to coordinate between repositories and entities, following the Dependency Inversion Principle",
+        "Allow repositories to call use case methods"
+      ],
+      "correct_answer": "Use use case classes to coordinate between repositories and entities, following the Dependency Inversion Principle"
+    },
+    {
+      "question": "How do you handle errors thrown in asynchronous middleware functions in Express?",
+      "possible_answers": [
+        "Let the errors propagate to the next middleware",
+        "Pass the error to the next function (e.g., next(err))",
+        "Log the errors and ignore them"
+      ],
+      "correct_answer": "Use a try-catch block inside an async function and call next with the error"
+    },
+    {
+      "question": "What is the purpose of the helmet middleware in Express?",
+      "possible_answers": [
+        "To enhance security by setting various HTTP headers",
+        "To handle file uploads",
+        "To manage user sessions"
+      ],
+      "correct_answer": "To enhance security by setting various HTTP headers"
+    },
+    {
+      "question": "How do you implement role-based access control (RBAC) in an Express application?",
+      "possible_answers": [
+        "Define user roles in the route handlers",
+        "Store user roles in session data",
+        "Use middleware to check roles against defined permissions before accessing protected routes"
+      ],
+      "correct_answer": "Use middleware to check roles against defined permissions before accessing protected routes"
+    },
+    {
+      "question": "What is the purpose of the passport library in an Express application?",
+      "possible_answers": [
+        "To manage static files",
+        "To handle authentication and authorization",
+        "To parse JSON request bodies"
+      ],
+      "correct_answer": "To handle authentication and authorization"
+    },
+    {
+      "question": "How do you ensure database migrations are run in the correct order?",
+      "possible_answers": [
+        "Apply them randomly",
+        "Use a versioning system to order migrations sequentially",
+        "Run all migrations in parallel"
+      ],
+      "correct_answer": "Use a versioning system to order migrations sequentially"
+    },
+    {
+      "question": "What is a rollback migration?",
+      "possible_answers": [
+        "A migration that adds new tables to the database",
+        "A migration that updates data in existing tables",
+        "A migration that reverts changes made by a previous migration"
+      ],
+      "correct_answer": "A migration that reverts changes made by a previous migration"
+    },
+    {
+      "question": "How do you handle route-level middleware in Express?",
+      "possible_answers": [
+        "Apply middleware functions as the second argument in route definitions (e.g., app.get('/path', middleware, handler))",
+        "Apply middleware globally to all routes",
+        "Define middleware functions inside route handlers"
+      ],
+      "correct_answer": "Apply middleware functions as the second argument in route definitions (e.g., app.get('/path', middleware, handler))"
+    },
+    {
+      "question": "How do you handle 404 errors in Express?",
+      "possible_answers": [
+        "Use a try-catch block around each route",
+        "Redirect to the home page",
+        "Define a catch-all middleware at the end of the route definitions"
+      ],
+      "correct_answer": "Define a catch-all middleware at the end of the route definitions"
+    },
+    {
+      "question": "Which of the following is not a primitive data type in JavaScript?",
+      "possible_answers": ["String", "Array", "Boolean"],
+      "correct_answer": "Array"
+    },
+    {
+      "question": "What is the purpose of the bind method in JavaScript?",
+      "possible_answers": [
+        "To immediately call a function",
+        "To loop over an array",
+        "To create a new function with a specific this context"
+      ],
+      "correct_answer": "To create a new function with a specific this context"
+    },
+    {
+      "question": "What will be the output of console.log(typeof NaN)?",
+      "possible_answers": ["\"undefined\"", "\"number\"", "\"NaN\""],
+      "correct_answer": "\"number\""
+    },
+    {
+      "question": "Which of the following is true about Node.js modules?",
+      "possible_answers": [
+        "They use the CommonJS module system by default",
+        "They use the ES6 module system by default",
+        "Modules are global by default"
+      ],
+      "correct_answer": "They use the CommonJS module system by default"
+    },
+    {
+      "question": "How do you check the current version of Node.js installed on your system?",
+      "possible_answers": ["node -v", "node --version", "node check version"],
+      "correct_answer": "node -v"
+    },
+    {
+      "question": "What is the purpose of the package.json file in a Node.js project?",
+      "possible_answers": [
+        "To store environment variables",
+        "To manage the project's dependencies and scripts",
+        "To define HTTP routes"
+      ],
+      "correct_answer": "To manage the project's dependencies and scripts"
+    },
+    {
+      "question": "How do you handle CORS in an Express application?",
+      "possible_answers": [
+        "Manually set the headers in every route",
+        "Use the cors middleware package",
+        "It is not possible to handle CORS in Express"
+      ],
+      "correct_answer": "Use the cors middleware package"
+    },
+    {
+      "question": "What is a middleware function in Express?",
+      "possible_answers": [
+        "A function that has access to the request object, response object, and next middleware function in the request-response cycle",
+        "A function that defines the application's routes",
+        "A function that renders HTML templates"
+      ],
+      "correct_answer": "A function that has access to the request object, response object, and next middleware function in the request-response cycle"
+    },
+    {
+      "question": "How do you pass data from middleware to the next middleware function in Express?",
+      "possible_answers": [
+        "By modifying the res object",
+        "By attaching data to the req object",
+        "By using global variables"
+      ],
+      "correct_answer": "By attaching data to the req object"
+    },
+    {
+      "question": "What is the purpose of the synchronized keyword in Java?",
+      "possible_answers": [
+        "To define a static method",
+        "To prevent null pointer exceptions",
+        "To control the access of multiple threads to a shared resource"
+      ],
+      "correct_answer": "To control the access of multiple threads to a shared resource"
+    },
+    {
+      "question": "What is the difference between == and equals() in Java?",
+      "possible_answers": [
+        "== compares object references, while equals() compares the content of objects",
+        "Both are used for content comparison",
+        "equals() compares object references, while == compares content"
+      ],
+      "correct_answer": "== compares object references, while equals() compares the content of objects"
+    },
+    {
+      "question": "Which of the following is a correct way to create a thread in Java?",
+      "possible_answers": [
+        "Implement the Runnable interface",
+        "Use the Thread interface",
+        "Use the Runnable class"
+      ],
+      "correct_answer": "Implement the Runnable interface"
+    },
+    {
+      "question": "How do you define a function that takes a string and returns a number in TypeScript?",
+      "possible_answers": [
+        "function foo(s: string): string { ... }",
+        "function foo(s: string): number { ... }",
+        "function foo(s): number { ... }"
+      ],
+      "correct_answer": "function foo(s: string): number { ... }"
+    },
+    {
+      "question": "Which of the following allows you to create a union type in TypeScript?",
+      "possible_answers": [
+        "type A = number & string;",
+        "type A = number | string;",
+        "type A = { number, string };"
+      ],
+      "correct_answer": "type A = number | string;"
+    },
+    {
+      "question": "What is the purpose of the unknown type in TypeScript?",
+      "possible_answers": [
+        "It is a safer alternative to any that requires type checking before usage",
+        "It can be used interchangeably with any",
+        "It is used for variables that can hold null or undefined"
+      ],
+      "correct_answer": "It is a safer alternative to any that requires type checking before usage"
+    },
+    {
+      "question": "How do you set up a global error handler in an Express application?",
+      "possible_answers": [
+        "Use try-catch blocks in each route handler",
+        "Use a middleware with (req, res, next) signature",
+        "Use a middleware with (err, req, res, next) signature"
+      ],
+      "correct_answer": "Use a middleware with (err, req, res, next) signature"
+    },
+    {
+      "question": "How do you organize routes in a large Express application?",
+      "possible_answers": [
+        "Use the Express Router to split routes into separate files/modules",
+        "Keep all routes in a single file",
+        "Define all routes in the app.js file"
+      ],
+      "correct_answer": "Use the Express Router to split routes into separate files/modules"
+    },
+    {
+      "question": "In Clean Architecture, which layer is closest to the user interface?",
+      "possible_answers": ["Entities", "Use cases", "Interface adapters"],
+      "correct_answer": "Interface adapters"
+    },
+    {
+      "question": "Which layer in Clean Architecture should be independent of any external frameworks?",
+      "possible_answers": ["Interface adapters", "Entities", "Infrastructure"],
+      "correct_answer": "Interface adapters"
+    },
+    {
+      "question": "What is a key benefit of using a repository pattern?",
+      "possible_answers": [
+        "Tightly couples business logic with data access logic",
+        "Provides a separation of concerns between business logic and data access",
+        "Simplifies the user interface code"
+      ],
+      "correct_answer": "Provides a separation of concerns between business logic and data access"
+    },
+    {
+      "question": "How can you enforce type safety in repository methods in TypeScript?",
+      "possible_answers": [
+        "By using any type",
+        "By defining method signatures with specific types",
+        "By using var for variables"
+      ],
+      "correct_answer": "By defining method signatures with specific types"
+    },
+    {
+      "question": "What is a distinguishing feature of an entity in Domain-Driven Design (DDD)?",
+      "possible_answers": [
+        "It has a unique identity that persists over time",
+        "It is immutable",
+        "It represents a value without an identity"
+      ],
+      "correct_answer": "It has a unique identity that persists over time"
+    },
+    {
+      "question": "How do you typically validate entities in a Clean Architecture application?",
+      "possible_answers": [
+        "Implement validation logic within the entity class itself",
+        "Use a separate validation service",
+        "Validate entities at the database level"
+      ],
+      "correct_answer": "Use a separate validation service"
+    },
+    {
+      "question": "What is a primary responsibility of a use case in Clean Architecture?",
+      "possible_answers": [
+        "Managing database connections",
+        "Encapsulating application-specific business rules",
+        "Handling HTTP requests directly"
+      ],
+      "correct_answer": "Encapsulating application-specific business rules"
+    },
+    {
+      "question": "How do use cases interact with external systems in Clean Architecture?",
+      "possible_answers": [
+        "Directly call external APIs",
+        "Use interfaces and dependency injection to interact with external systems",
+        "Use global variables to manage external interactions"
+      ],
+      "correct_answer": "Use interfaces and dependency injection to interact with external systems"
+    },
+    {
+      "question": "What is a common use of middleware in Express applications?",
+      "possible_answers": [
+        "To modify the request and response objects",
+        "To define application routes",
+        "To connect to databases"
+      ],
+      "correct_answer": "To modify the request and response objects"
+    },
+    {
+      "question": "How can you apply middleware to specific routes only in Express?",
+      "possible_answers": [
+        "Use app.use(middleware)",
+        "Pass the middleware as an argument to the route handler (e.g., app.get('/route', middleware, handler))",
+        "Apply middleware globally"
+      ],
+      "correct_answer": "Pass the middleware as an argument to the route handler (e.g., app.get('/route', middleware, handler))"
+    },
+    {
+      "question": "What is a common practice for managing user permissions in a backend application?",
+      "possible_answers": [
+        "Check permissions on the client side",
+        "Use a centralized permissions system and check permissions in middleware",
+        "Ignore permissions for trusted users"
+      ],
+      "correct_answer": "Use a centralized permissions system and check permissions in middleware"
+    },
+    {
+      "question": "How do you typically store user roles and permissions in a backend system?",
+      "possible_answers": [
+        "In local variables",
+        "In a database or an external service",
+        "In client-side cookies"
+      ],
+      "correct_answer": "In a database or an external service"
+    },
+    {
+      "question": "What is the purpose of database migrations?",
+      "possible_answers": [
+        "To manage changes to the database schema over time",
+        "To handle user authentication",
+        "To serve static files"
+      ],
+      "correct_answer": "To manage changes to the database schema over time"
+    },
+    {
+      "question": "How do you apply a new migration in a Node.js project using Sequelize?",
+      "possible_answers": [
+        "sequelize create migration",
+        "sequelize db:migrate",
+        "sequelize db:update"
+      ],
+      "correct_answer": "sequelize db:migrate"
+    },
+    {
+      "question": "What is the purpose of route parameters in Express?",
+      "possible_answers": [
+        "To define static routes",
+        "To capture dynamic values from the URL",
+        "To handle query strings"
+      ],
+      "correct_answer": "To capture dynamic values from the URL"
+    },
+    {
+      "question": "How do you handle query parameters in an Express route?",
+      "possible_answers": ["Use req.params", "Use req.query", "Use req.body"],
+      "correct_answer": "Use req.query"
+    },
+    {
+      "question": "What is a common use of the async/await syntax in JavaScript?",
+      "possible_answers": [
+        "To write synchronous code",
+        "To handle asynchronous operations more easily",
+        "To create promises"
+      ],
+      "correct_answer": "To handle asynchronous operations more easily"
+    },
+    {
+      "question": "What does ACID stand for in the context of databases?",
+      "possible_answers": [
+        "Atomicity, Consistency, Isolation, Durability",
+        "Atomicity, Consistency, Integrity, Durability",
+        "Availability, Consistency, Isolation, Durability"
+      ],
+      "correct_answer": "Atomicity, Consistency, Isolation, Durability"
+    },
+    {
+      "question": "Which of the following HTTP status codes indicates a successful request?",
+      "possible_answers": ["200", "404", "500"],
+      "correct_answer": "200"
+    }
+  ]
+}
