@@ -1,15 +1,6 @@
 {
   "questions": [
     {
-      "question": "What is the purpose of the this keyword in JavaScript?",
-      "possible_answers": [
-        "Refers to the current function",
-        "Refers to the current object instance",
-        "Refers to the global scope"
-      ],
-      "correct_answer": "Refers to the current object instance"
-    },
-    {
       "question": "Which method can be used to convert a JSON text into a JavaScript object?",
       "possible_answers": [
         "JSON.parse()",
@@ -26,11 +17,6 @@
         "Desktop applications"
       ],
       "correct_answer": "Server-side scripting"
-    },
-    {
-      "question": "Which module is used for working with file and directory paths?",
-      "possible_answers": ["os", "http", "path"],
-      "correct_answer": "path"
     },
     {
       "question": "What is Express used for in Node.js applications?",
