@@ -1107,6 +1107,165 @@
       "question": "Which of the following HTTP status codes indicates a successful request?",
       "possible_answers": ["200", "404", "500"],
       "correct_answer": "200"
+    },
+    {
+      "question": "What is React primarily used for?",
+      "possible_answers": [
+        "Creating mobile applications",
+        "Building user interfaces",
+        "Managing server-side logic"
+      ],
+      "correct_answer": "Building user interfaces"
+    },
+    {
+      "question": "Which directive is used to attach a controller in Angular?",
+      "possible_answers": ["ng-app", "ng-controller", "ng-model"],
+      "correct_answer": "ng-controller"
+    },
+    {
+      "question": "What is the purpose of a component in frontend frameworks?",
+      "possible_answers": [
+        "To style web pages",
+        "To manage state and render UI",
+        "To handle database queries"
+      ],
+      "correct_answer": "To manage state and render UI"
+    },
+    {
+      "question": "Which of the following is a state management tool commonly used with React?",
+      "possible_answers": ["Redux", "Express", "Sequelize"],
+      "correct_answer": "Redux"
+    },
+    {
+      "question": "What is an Express middleware?",
+      "possible_answers": [
+        "A function that handles HTTP requests and responses",
+        "A type of database",
+        "A styling framework"
+      ],
+      "correct_answer": "A function that handles HTTP requests and responses"
+    },
+    {
+      "question": "What is the purpose of a repository in clean architecture?",
+      "possible_answers": [
+        "To handle HTTP requests",
+        "To manage data access and persistence",
+        "To render UI components"
+      ],
+      "correct_answer": "To manage data access and persistence"
+    },
+    {
+      "question": "Which tool is commonly used for database migrations in Node.js applications?",
+      "possible_answers": ["Sequelize", "Redux", "Mocha"],
+      "correct_answer": "Sequelize"
+    },
+    {
+      "question": "What is the role of a use case in clean architecture?",
+      "possible_answers": [
+        "To define the application's business rules",
+        "To handle HTTP routing",
+        "To manage CSS styles"
+      ],
+      "correct_answer": "To define the application's business rules"
+    },
+    {
+      "question": "In TypeScript, what is the purpose of an interface?",
+      "possible_answers": [
+        "To define a contract for classes to implement",
+        "To create a new database schema",
+        "To add styling to components"
+      ],
+      "correct_answer": "To define a contract for classes to implement"
+    },
+    {
+      "question": "What is ORM in the context of backend development?",
+      "possible_answers": [
+        "Object-Relational Mapping",
+        "Online Resource Management",
+        "Open Routing Method"
+      ],
+      "correct_answer": "Object-Relational Mapping"
+    },
+    {
+      "question": "What is the purpose of the useMemo hook in React?",
+      "possible_answers": [
+        "To optimize performance by memoizing expensive calculations",
+        "To manage side effects in function components",
+        "To trigger re-renders based on state changes"
+      ],
+      "correct_answer": "To optimize performance by memoizing expensive calculations"
+    },
+    {
+      "question": "In Angular, what is the difference between a service and a factory?",
+      "possible_answers": [
+        "A service is a singleton, while a factory returns a new instance every time",
+        "A factory is a singleton, while a service returns a new instance every time",
+        "There is no difference; they are the same"
+      ],
+      "correct_answer": "A service is a singleton, while a factory returns a new instance every time"
+    },
+    {
+      "question": "What is a Higher-Order Component (HOC) in React?",
+      "possible_answers": [
+        "A component that is rendered conditionally based on state",
+        "A function that takes a component and returns a new component",
+        "A component that manages form inputs and validation"
+      ],
+      "correct_answer": "A function that takes a component and returns a new component"
+    },
+    {
+      "question": "What is a Higher-Order Component (HOC) in React?",
+      "possible_answers": [
+        "A component that is rendered conditionally based on state",
+        "A function that takes a component and returns a new component",
+        "A component that manages form inputs and validation"
+      ],
+      "correct_answer": "A function that takes a component and returns a new component"
+    },
+    {
+      "question": "In Node.js, what is the primary difference between the 'cluster' module and the 'worker_threads' module?",
+      "possible_answers": [
+        "Cluster module is used for multiprocessing, while worker_threads is used for multithreading",
+        "Cluster module is for handling HTTP requests, while worker_threads is for managing database connections",
+        "Cluster module is used for file I/O, while worker_threads is used for network I/O"
+      ],
+      "correct_answer": "Cluster module is used for multiprocessing, while worker_threads is used for multithreading"
+    },
+    {
+      "question": "In Node.js, what is the primary difference between the 'cluster' module and the 'worker_threads' module?",
+      "possible_answers": [
+        "Cluster module is used for multiprocessing, while worker_threads is used for multithreading",
+        "Cluster module is for handling HTTP requests, while worker_threads is for managing database connections",
+        "Cluster module is used for file I/O, while worker_threads is used for network I/O"
+      ],
+      "correct_answer": "Cluster module is used for multiprocessing, while worker_threads is used for multithreading"
+    },
+    {
+      "question": "How does TypeScript's 'strict' mode enhance code quality?",
+      "possible_answers": [
+        "By enabling stricter type-checking options, it reduces the likelihood of runtime errors",
+        "By optimizing the code for performance",
+        "By automatically formatting the code according to best practices"
+      ],
+      "correct_answer": "By enabling stricter type-checking options, it reduces the likelihood of runtime errors"
+    },
+    {
+      "question": "In an ORM like Sequelize, what is the purpose of migrations?",
+      "possible_answers": [
+        "To handle version control for database schema changes",
+        "To improve query performance and optimization",
+        "To manage user authentication and authorization"
+      ],
+      "correct_answer": "To handle version control for database schema changes"
+    },
+    {
+      "question": "What is the primary benefit of using a middleware in an Express application?",
+      "possible_answers": [
+        "To modularize and handle various request processing stages like authentication, logging, and error handling",
+        "To manage and query databases efficiently",
+        "To style the user interface components"
+      ],
+      "correct_answer": "To modularize and handle various request processing stages like authentication, logging, and error handling"
     }
   ]
 }
