@@ -1266,6 +1266,78 @@
         "To style the user interface components"
       ],
       "correct_answer": "To modularize and handle various request processing stages like authentication, logging, and error handling"
+    },
+    {
+      "question": "In React, what is the purpose of the useReducer hook, and how does it differ from useState?",
+      "possible_answers": [
+        "useReducer is used for managing more complex state logic, whereas useState is used for simpler state updates",
+        "useReducer is used for handling side effects, whereas useState is used for managing state",
+        "useReducer and useState are functionally identical"
+      ],
+      "correct_answer": "useReducer is used for managing more complex state logic, whereas useState is used for simpler state updates"
+    },
+    {
+      "question": "How does Angular's Change Detection mechanism work, and what are its key strategies?",
+      "possible_answers": [
+        "Angular uses a zone-based mechanism to detect changes, with key strategies being Default and OnPush",
+        "Angular relies on manual change detection by developers, with strategies like Manual and Automatic",
+        "Angular uses a virtual DOM to detect changes, with key strategies being VDOM and RealDOM"
+      ],
+      "correct_answer": "Angular uses a zone-based mechanism to detect changes, with key strategies being Default and OnPush"
+    },
+    {
+      "question": "What is the Virtual DOM in React, and how does it enhance performance?",
+      "possible_answers": [
+        "The Virtual DOM is a lightweight copy of the real DOM that enables efficient updates by batching changes and minimizing reflows",
+        "The Virtual DOM is a styling abstraction layer that helps manage CSS",
+        "The Virtual DOM is a server-side concept for handling API requests"
+      ],
+      "correct_answer": "The Virtual DOM is a lightweight copy of the real DOM that enables efficient updates by batching changes and minimizing reflows"
+    },
+    {
+      "question": "In Node.js, how does the Event Loop handle asynchronous operations, and what is the role of the call stack and the task queue?",
+      "possible_answers": [
+        "The Event Loop continuously checks the call stack and task queue to execute tasks, with the call stack handling synchronous code and the task queue managing asynchronous callbacks",
+        "The Event Loop directly executes asynchronous operations without using a call stack or task queue",
+        "The Event Loop manages only synchronous operations, while asynchronous operations are handled by separate threads"
+      ],
+      "correct_answer": "The Event Loop continuously checks the call stack and task queue to execute tasks, with the call stack handling synchronous code and the task queue managing asynchronous callbacks"
+    },
+    {
+      "question": "In clean architecture, what is the significance of separating the domain layer from the application layer?",
+      "possible_answers": [
+        "It ensures that business rules (domain layer) remain independent of application-specific logic (application layer), promoting modularity and maintainability",
+        "It helps in managing user interfaces separately from the server logic",
+        "It improves database performance by optimizing query execution"
+      ],
+      "correct_answer": "It ensures that business rules (domain layer) remain independent of application-specific logic (application layer), promoting modularity and maintainability"
+    },
+    {
+      "question": "Explain the role of middleware in Express.js and provide an example of custom middleware for logging requests.",
+      "possible_answers": [
+        "Middleware functions are functions that have access to the request object, response object, and the next middleware function in the application’s request-response cycle. They can execute code, make changes to the request/response objects, end the request-response cycle, and call the next middleware in the stack.",
+        "Middleware is only used for serving static files",
+        "Middleware functions are used to directly interact with the database"
+      ],
+      "correct_answer": "Middleware functions are functions that have access to the request object, response object, and the next middleware function in the application’s request-response cycle. They can execute code, make changes to the request/response objects, end the request-response cycle, and call the next middleware in the stack."
+    },
+    {
+      "question": "Explain the role of middleware in Express.js and provide an example of custom middleware for logging requests.",
+      "possible_answers": [
+        "Middleware functions are functions that have access to the request object, response object, and the next middleware function in the application’s request-response cycle. They can execute code, make changes to the request/response objects, end the request-response cycle, and call the next middleware in the stack.",
+        "Middleware is only used for serving static files",
+        "Middleware functions are used to directly interact with the database"
+      ],
+      "correct_answer": "Middleware functions are functions that have access to the request object, response object, and the next middleware function in the application’s request-response cycle. They can execute code, make changes to the request/response objects, end the request-response cycle, and call the next middleware in the stack."
+    },
+    {
+      "question": "What are the key principles of Domain-Driven Design (DDD) and how do they apply to backend development?",
+      "possible_answers": [
+        "The key principles of DDD include entities, value objects, aggregates, services, repositories, and bounded contexts. These principles help in structuring the backend codebase by clearly defining the business domain, ensuring that the code reflects the real-world scenarios it aims to model.",
+        "DDD focuses solely on database schema optimization and query performance",
+        "DDD is used only for frontend application design"
+      ],
+      "correct_answer": "The key principles of DDD include entities, value objects, aggregates, services, repositories, and bounded contexts. These principles help in structuring the backend codebase by clearly defining the business domain, ensuring that the code reflects the real-world scenarios it aims to model."
     }
   ]
 }
